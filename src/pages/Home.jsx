@@ -2,16 +2,29 @@ import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
 
+import Exercises from '../components/Exercises';
+import SearchExercises from '../components/SearchExercises';
 import HeroBanner from '../components/HeroBanner';
-
 import ChatBot from '../components/ChatBot';
 
 const Home = () => {
+  const [exercises, setExercises] = useState([]);
+  const [bodyPart, setBodyPart] = useState('all');
   const [chatModalOpen, setChatModalOpen] = useState(false);
 
   return (
     <Box minHeight='560px' height='auto'>
       <HeroBanner />
+      <SearchExercises
+        setExercises={setExercises}
+        bodyPart={bodyPart}
+        setBodyPart={setBodyPart}
+      />
+      {/* <Exercises
+        setExercises={setExercises}
+        exercises={exercises}
+        bodyPart={bodyPart}
+      /> */}
       {chatModalOpen ? (
         <ChatBot onClose={() => setChatModalOpen(false)} />
       ) : (
