@@ -20,11 +20,11 @@ const Home = () => {
         bodyPart={bodyPart}
         setBodyPart={setBodyPart}
       />
-      {/* <Exercises
+      <Exercises
         setExercises={setExercises}
         exercises={exercises}
         bodyPart={bodyPart}
-      /> */}
+      />
       {chatModalOpen ? (
         <ChatBot onClose={() => setChatModalOpen(false)} />
       ) : (
