@@ -6,6 +6,7 @@ import './App.css';
 // Page
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import Recommendation from './pages/Recommendation';
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 
@@ -14,6 +15,7 @@ const App = () => (
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/recommendation' element={<Recommendation />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
     <Footer />
