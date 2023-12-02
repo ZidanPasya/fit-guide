@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 
 import './App.css';
 // Page
+import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ const App = () => (
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/exercise/:id' element={<ExerciseDetail />} />
       <Route path='/exercises' element={<Exercises />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
