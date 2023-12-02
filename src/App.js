@@ -6,6 +6,7 @@ import './App.css';
 // Page
 import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
+import Recommendation from './pages/Recommendation';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Favorite from './pages/Favorite';
@@ -19,6 +20,7 @@ const App = () => (
       <Route path='/' element={<Home />} />
       <Route path='/exercise/:id' element={<ExerciseDetail />} />
       <Route path='/exercises' element={<Exercises />} />
+      <Route path='/recommendation' element={<Recommendation />} />
       <Route path='/favorite' element={<Favorite />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
