@@ -7,6 +7,7 @@ import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Favorite from './pages/Favorite';
 import NotFound from './pages/NotFound';
 
 const App = () => (
@@ -14,6 +15,7 @@ const App = () => (
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='favorite' element={<Favorite />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
     <Footer />
