@@ -8,6 +8,7 @@ import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Favorite from './pages/Favorite';
 import NotFound from './pages/NotFound';
 import Exercises from './pages/Exercises';
 
@@ -18,6 +19,7 @@ const App = () => (
       <Route path='/' element={<Home />} />
       <Route path='/exercise/:id' element={<ExerciseDetail />} />
       <Route path='/exercises' element={<Exercises />} />
+      <Route path='/favorite' element={<Favorite />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
     <Footer />
