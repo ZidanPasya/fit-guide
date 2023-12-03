@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Favorite from './pages/Favorite';
 import NotFound from './pages/NotFound';
+import About from './pages/About';
 import Exercises from './pages/Exercises';
 
 const App = () => (
@@ -22,6 +23,7 @@ const App = () => (
       <Route path='/exercises' element={<Exercises />} />
       <Route path='/recommendation' element={<Recommendation />} />
       <Route path='/favorite' element={<Favorite />} />
+      <Route path='/about' element={<About />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
     <Footer />
