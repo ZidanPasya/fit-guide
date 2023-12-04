@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Typography, Paper, Avatar } from '@mui/material';
+import { Container, Grid, Typography, Paper, Avatar, Box } from '@mui/material';
 import { Twitter, Instagram, Facebook, LinkedIn } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import ImageProfile from '../assets/images/Logo.png';
@@ -7,56 +7,60 @@ import ImageProfile from '../assets/images/Logo.png';
 const About = () => {
   const teamMembers = [
     {
-        name: 'Rayhan Naufal Arrafi',
-        role: 'Project Manager and Front-End Developer #1',
-        image: ImageProfile,
-        bio: 'Lorem Ipsum',
+      name: 'Rayhan Naufal Arrafi',
+      role: 'Project Manager and Front-End Developer #1',
+      image: ImageProfile,
+      bio: 'Lorem Ipsum',
     },
     {
-        name: 'Ihsan Alhakim',
-        role: 'Front-End Developer #2',
-        image: ImageProfile,
-        bio: 'Lorem Ipsum',
+      name: 'Ihsan Alhakim',
+      role: 'Front-End Developer #2',
+      image: ImageProfile,
+      bio: 'Lorem Ipsum',
     },
     {
-        name: 'Muhammad Zidan Pasya',
-        role: 'Back-End Developer #1',
-        image: ImageProfile,
-        bio: 'Lorem Ipsum',
-        twitter: 'zidanpasya',
-        instagram: 'zidanpasya',
-        facebook: 'zidan.pasya',
-        linkedin: 'zidanpasya'
+      name: 'Muhammad Zidan Pasya',
+      role: 'Back-End Developer #1',
+      image: ImageProfile,
+      bio: 'Lorem Ipsum',
+      twitter: 'zidanpasya',
+      instagram: 'zidanpasya',
+      facebook: 'zidan.pasya',
+      linkedin: 'zidanpasya'
     },
     {
-        name: 'Lingga Alzidan Zunanto',
-        role: 'Back-End Developer #2',
-        image: ImageProfile,
-        bio: 'Lorem Ipsum',
+      name: 'Lingga Alzidan Zunanto',
+      role: 'Back-End Developer #2',
+      image: ImageProfile,
+      bio: 'Lorem Ipsum',
     },
     {
-        name: 'Sofya Saharani',
-        role: 'UI/UX Designer',
-        image: ImageProfile,
-        bio: 'Lorem Ipsum',
+      name: 'Sofya Saharani',
+      role: 'UI/UX Designer',
+      image: ImageProfile,
+      bio: 'Lorem Ipsum',
     },
   ];
 
   return (
-    <Paper sx={{ bgcolor: 'background.paper', p: 4, textAlign: 'center' }}>
+    <Box sx={{ textAlign: 'center' }}>
+      <Box sx={{ backgroundColor: '#124c6e', color: 'white' }}>
+        <Container sx={{ pt: 2, pb: 2 }}>
+          <Typography variant='h3' gutterBottom>
+            FitGuide
+          </Typography>
+
+          <Typography variant='subtitle1' gutterBottom>
+            FitGuide merupakan sebuah website panduan olahraga yang memberikan
+            pengetahuan baik untuk masyarakat awam maupun masyarakat yang telah
+            terbiasa mengenai cara berolahraga untuk membentuk tubuh ideal, menghindari
+            cedera saat berolahraga, serta menggunakan alat atau beban tubuh saat berolahraga
+          </Typography>
+        </Container>
+      </Box>
+
       <Container>
-        <Typography variant='h3' gutterBottom>
-          FitGuide
-        </Typography>
-
-        <Typography variant='subtitle1' gutterBottom sx={{ pb: 2 }}>
-          FitGuide mmerupakan sebuah website panduan olahraga yang memberikan
-          pengetahuan baik untuk masyarakat awam maupun masyarakat yang telah
-          terbiasa mengenai cara berolahraga untuk membentuk tubuh ideal, menghindari
-          cedera saat berolahraga, serta menggunakan alat atau beban tubuh saat berolahraga
-        </Typography>
-
-        <Typography variant='h3' gutterBottom>
+        <Typography variant='h3' gutterBottom sx={{ pt: 2 }}>
           The Team Behind FitGuide
         </Typography>
 
@@ -122,7 +126,7 @@ const About = () => {
           ))}
         </Grid>
       </Container>
-    </Paper>
+    </Box>
   );
 };
 
