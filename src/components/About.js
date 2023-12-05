@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Typography, Paper, Avatar, Box } from '@mui/material';
-import { Twitter, Instagram, Facebook, LinkedIn } from '@mui/icons-material';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import ImageProfile from '../assets/images/Logo.png';
 
@@ -11,21 +11,23 @@ const About = () => {
       role: 'Project Manager and Front-End Developer #1',
       image: ImageProfile,
       bio: 'Lorem Ipsum',
+      github: 'rayhannn11',
+      linkedin: 'rayhan-naufal-arrafi-b02175229'
     },
     {
       name: 'Ihsan Alhakim',
       role: 'Front-End Developer #2',
       image: ImageProfile,
       bio: 'Lorem Ipsum',
+      github: 'IhsanAlhakim',
+      linkedin: 'ihsan-alhakim-03515b29a'
     },
     {
       name: 'Muhammad Zidan Pasya',
       role: 'Back-End Developer #1',
       image: ImageProfile,
       bio: 'Lorem Ipsum',
-      twitter: 'zidanpasya',
-      instagram: 'zidanpasya',
-      facebook: 'zidan.pasya',
+      github: 'ZidanPasya',
       linkedin: 'zidanpasya'
     },
     {
@@ -33,12 +35,16 @@ const About = () => {
       role: 'Back-End Developer #2',
       image: ImageProfile,
       bio: 'Lorem Ipsum',
+      github: 'Linggaaaaa',
+      linkedin: 'lingga-alzidan-zunanto-7b437b233'
     },
     {
       name: 'Sofya Saharani',
       role: 'UI/UX Designer',
       image: ImageProfile,
       bio: 'Lorem Ipsum',
+      github: 'sofyasaharani',
+      linkedin: 'sofya-saharani-0888991a1'
     },
   ];
 
@@ -101,18 +107,8 @@ const About = () => {
                   }}
                 >
                   <li>
-                    <Link to={`https://www.twitter.com/${member.twitter}`}>
-                      <Twitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={`https://www.instagram.com/${member.instagram}`}>
-                      <Instagram />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={`https://www.facebook.com/${member.facebook}`}>
-                      <Facebook />
+                    <Link to={`https://www.github.com/${member.github}`}>
+                      <GitHub />
                     </Link>
                   </li>
                   <li>
