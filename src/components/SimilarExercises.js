@@ -5,9 +5,9 @@ import HorizontalScrollbar from './HorizontalScrollbar';
 import Loader from './Loader';
 
 const SimilarExercises = ({ targetMuscleExercises }) => (
-  <Box sx={{ mt: { lg: '100px', xs: '0px' } }}>
+  <Box p='40px'>
     <Typography
-      sx={{ fontSize: { lg: '44px', xs: '25px' }, ml: '20px' }}
+      sx={{ fontSize: { lg: '44px', xs: '25px' } }}
       fontWeight={700}
       color='#000'
       mb='33px'
@@ -18,7 +18,7 @@ const SimilarExercises = ({ targetMuscleExercises }) => (
       </span>{' '}
       exercises
     </Typography>
-    <Stack direction='row' sx={{ p: 2, position: 'relative' }}>
+    <Stack direction='row' sx={{ position: 'relative' }}>
       {targetMuscleExercises.length !== 0 ? (
         <HorizontalScrollbar data={targetMuscleExercises} />
       ) : (

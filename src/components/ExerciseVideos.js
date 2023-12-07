@@ -10,7 +10,7 @@ const ExerciseVideos = ({
   if (!exerciseVideos.length) return <Loader />;
 
   return (
-    <Box sx={{ marginTop: { lg: '203px', xs: '20px' } }} p='20px'>
+    <Box p='40px'>
       <Typography
         sx={{
           fontSize: { lg: '44px', xs: '25px' },
@@ -27,13 +27,10 @@ const ExerciseVideos = ({
         exercise videos
       </Typography>
       <Stack
-        sx={{
-          flexDirection: { lg: 'row' },
-          gap: { lg: '40px', xs: '0px' },
-        }}
-        justifyContent='flex-start'
+        direction='row'
+        sx={{ gap: { lg: '10px', xs: '50px' } }}
         flexWrap='wrap'
-        alignItems='center'
+        justifyContent='space-between'
       >
         {exerciseVideos?.slice(0, 4)?.map((item, index) => (
           <a
@@ -50,9 +47,10 @@ const ExerciseVideos = ({
             />
             <Box>
               <Typography
-                sx={{ fontSize: { lg: '28px', xs: '18px' } }}
+                sx={{ fontSize: { lg: '24px', xs: '18px' } }}
                 fontWeight={600}
                 color='#000'
+                textAlign='justify'
               >
                 {item.video.title}
               </Typography>

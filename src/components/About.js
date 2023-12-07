@@ -19,36 +19,36 @@ const About = () => {
       linkedin: 'rayhan-naufal-arrafi-b02175229'
     },
     {
-      name: 'Ihsan Alhakim',
-      role: 'Front-End Developer #2',
-      image: ihsanProfile,
-      bio: 'Perkenalkan Saya Ihsan Alhakim. Biasanya saya dipanggil ihsan saja. Saat ini saya sedang menempuh pendidikan strata 1 di Universitas Gunadarma jurusan Sistem Informasi. Saya percaya diri dengan kemampuan saya untuk membuat web menggunakan HTML, CSS, dan Javascript. Sampai saat ini saya terus belajar mengenai Front-End Web Development untuk membuat web yang lebih baik lagi.',
-      github: 'IhsanAlhakim',
-      linkedin: 'ihsan-alhakim-03515b29a'
-    },
-    {
-      name: 'Muhammad Zidan Pasya',
-      role: 'Back-End Developer #1',
-      image: zidanProfile,
-      bio: 'Saya Muhammad Zidan Pasya, mahasiswa S1 Ilmu Komputer Universitas Lampung. Saat ini saya aktif sebagai anggota Himpunan Mahasiswa Ilmu Komputer. Saya memiliki passion di Full-stack Web Development dan menguasai beberapa Bahasa Pemrograman seperti JavaScript, Python dan PHP. Serta Bahasa Markup seperti HTML dan CSS. Saya mampu belajar secara mandiri, menyerap ilmu dengan cepat, memiliki motivasi tinggi, bertanggung jawab, pekerja keras, dan mampu bekerja dalam tim ataupun secara individu. Saya memiliki antusias tinggi dalam mengerjakan projek dan selalu mencari cara untuk meningkatkan kualitas kode yang dibuat',
-      github: 'ZidanPasya',
-      linkedin: 'zidanpasya'
-    },
-    {
-      name: 'Lingga Alzidan Zunanto',
-      role: 'Back-End Developer #2',
-      image: linggaProfile,
-      bio: 'Saya Lingga Alzidan Zunanto mahasiswa program studi Sistem Informasi Universitas Gunadarma. Minat utama saya terletak pada bidang pengembangan Web. Saya adalah anggota aktif dari komunitas sosial yang berkontribusi langsung kepada masyarakat. Selain kegiatan akademik dan kegiatan sosial, saat ini saya aktif mencari peluang untuk mendapatkan pengalaman kerja melalui pekerjaan freelance dan juga berkolaborasi dengan teman-teman untuk mendirikan startup IT, untuk lebih meningkatkan keterampilan dan pengetahuan saya.',
-      github: 'Linggaaaaa',
-      linkedin: 'lingga-alzidan-zunanto-7b437b233'
-    },
-    {
       name: 'Sofya Saharani',
       role: 'UI/UX Designer',
       image: sofyaProfile,
       bio: 'Saya Sofya mahasiswa semester 5 yang tertarik dengan antarmuka web dan front-end. Saat ini sedang mengejar gelar sarjana Sistem Informasi di Universitas Malikussaleh dengan fokus yang kuat pada pengembangan keterampilan dalam Antarmuka Web, Front-end, dan Back-end. Meskipun saya belum mendapatkan pengalaman kerja profesional, saya telah terlibat aktif dalam berbagai proyek pribadi dan kursus yang meningkatkan keterampilan saya dalam menggunakan HTML5, CSS, Javascript, PHP, dan berbagai framework pemrograman seperti Bootstrap, Tailwind, React, dan Laravel .',
       github: 'sofyasaharani',
       linkedin: 'sofya-saharani-0888991a1'
+    },
+    {
+      name: 'Muhammad Zidan Pasya',
+      role: 'Front-End Developer #2',
+      image: zidanProfile,
+      bio: 'Saya Muhammad Zidan Pasya, mahasiswa S1 Ilmu Komputer Universitas Lampung. Saat ini saya aktif sebagai anggota Himpunan Mahasiswa Ilmu Komputer. Saya memiliki passion di Full-stack Web Development dan menguasai kemampuan seperti JavaScript, Python, PHP, HTML dan CSS. Saya mampu belajar secara mandiri, menyerap ilmu dengan cepat, memiliki motivasi tinggi, bertanggung jawab, pekerja keras, dan mampu bekerja dalam tim ataupun secara individu. Saya memiliki antusias tinggi dalam mengerjakan projek dan selalu mencari cara untuk meningkatkan kualitas kode yang dibuat',
+      github: 'ZidanPasya',
+      linkedin: 'zidanpasya'
+    },
+    {
+      name: 'Lingga Alzidan Zunanto',
+      role: 'Back-End Developer #1',
+      image: linggaProfile,
+      bio: 'Saya Lingga Alzidan Zunanto mahasiswa program studi Sistem Informasi Universitas Gunadarma. Minat utama saya terletak pada bidang pengembangan Web. Saya adalah anggota aktif dari komunitas sosial yang berkontribusi langsung kepada masyarakat. Selain kegiatan akademik dan kegiatan sosial, saat ini saya aktif mencari peluang untuk mendapatkan pengalaman kerja melalui pekerjaan freelance dan juga berkolaborasi dengan teman-teman untuk mendirikan startup IT, untuk lebih meningkatkan keterampilan dan pengetahuan saya.',
+      github: 'Linggaaaaa',
+      linkedin: 'lingga-alzidan-zunanto-7b437b233'
+    },
+    {
+      name: 'Ihsan Alhakim',
+      role: 'Back-End Developer #2',
+      image: ihsanProfile,
+      bio: 'Perkenalkan Saya Ihsan Alhakim. Biasanya saya dipanggil ihsan saja. Saat ini saya sedang menempuh pendidikan strata 1 di Universitas Gunadarma jurusan Sistem Informasi. Saya percaya diri dengan kemampuan saya untuk membuat web menggunakan HTML, CSS, dan Javascript. Sampai saat ini saya terus belajar mengenai Front-End Web Development untuk membuat web yang lebih baik lagi.',
+      github: 'IhsanAlhakim',
+      linkedin: 'ihsan-alhakim-03515b29a'
     },
   ];
 

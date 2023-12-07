@@ -5,15 +5,14 @@ import HeroBannerImage from '../assets/images/jumbotron.png';
 
 const HeroBanner = () => (
   <Box
-    sx={{ mt: { lg: '120px', xs: '70px' }, ml: { sm: '50px' } }}
+    // sx={{ mt: { lg: '120px', xs: '70px' } }}
+    display="flex"
+    justifyContent="space-between" // Adjust as needed
+    alignItems="center" // Center vertically
     position='relative'
-    p='20px'
+    p='40px'
   >
-    <Stack
-      sx={{
-        ml: { md: '50px' },
-      }}
-    >
+    <Stack flex="1">
       <Typography
         color='#043a59'
         fontWeight='600'
@@ -32,7 +31,7 @@ const HeroBanner = () => (
       >
         GET FIT TO HAPPY
       </Typography>
-      <Typography fontSize='22px' fontFamily='Alegreya' lineHeight='35px'>
+      <Typography fontSize='21px' fontFamily='Alegreya' lineHeight='35px'>
         We are ready to help you achieve a healthy body, wherever you are <br />
         We provide fitness solutions that can be accessed from anywhere.
       </Typography>
@@ -56,7 +55,13 @@ const HeroBanner = () => (
         </a>
       </Stack>
     </Stack>
-    <img src={HeroBannerImage} alt='hero-banner' className='hero-banner-img' />
+    <Box flex="1" style={{ borderRadius: '50%', overflow: 'hidden' }}>
+      <img
+        src={HeroBannerImage}
+        alt='hero-banner'
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Box>
   </Box>
 );
 

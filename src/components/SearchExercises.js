@@ -72,7 +72,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       alignItems='center'
       mt='37px'
       justifyContent='center'
-      p='20px'
+      p='40px'
       bgcolor='#F4F4F5'
     >
       <Typography
@@ -89,7 +89,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           height='76px'
           sx={{
             input: { fontWeight: '700', border: 'none', borderRadius: '4px' },
-            width: { lg: '1170px', xs: '350px' },
+            width: { lg: '1200px', xs: '350px' },
             backgroundColor: '#fff',
           }}
           value={search}
@@ -114,7 +114,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           Search
         </Button>
       </Box>
-      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
+      <Box sx={{ position: 'relative', width: '100%' }}>
         <HorizontalScrollbar
           data={bodyParts}
           bodyParts
