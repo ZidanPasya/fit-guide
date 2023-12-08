@@ -74,7 +74,7 @@ const About = () => {
           Team Behind FitGuide
         </Typography>
 
-        <Grid container spacing={4} justifyContent='center'>
+        <Grid container spacing={4} justifyContent='center' mb='40px'>
           {teamMembers.map((member, index) => (
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Paper sx={{ p: 2, height: '100%', display: 'flex', flexDirection: 'column' }}>

@@ -57,19 +57,11 @@ body {
   height: 742px;
 }
 
-.hero-banner-img {
-  position: absolute;
-  right: 10px;
-  top: 160px;
-  width: 900px;
-  height: 700px;
-  margin-top: -330px;
-}
-
 .exercise-card {
   background: #fff;
   border-top: 4px solid #273842;
   border-bottom-left-radius: 20px;
+  height: fit-content;
   text-decoration: none;
   display: flex;
   justify-content: space-between;

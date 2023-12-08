@@ -7,20 +7,10 @@ import HorizontalScrollbar from './HorizontalScrollbar';
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const [bodyParts, setBodyParts] = useState([]);
   const [search, setSearch] = useState('');
+  const [exerciseNotFound, setExerciseNotFound] = useState(false);
 
-  // Effect for bodyPart list
   useEffect(() => {
     const fetchExercisesData = async () => {
-      // const bodyPartsData = await fetchData(
-      //   'https://zuka.p.rapidapi.com/exercices/bodyPart',
-      //   exerciseOptions
-      // );
-      // const { bodyparts } = bodyPartsData;
-      // const bodyPartName = bodyparts.map((item) => {
-      //   return item.part;
-      // });
-      // setBodyParts(['all', ...bodyPartName]);
-
       const bodyPartsData = await fetchData(
         'https://exercisedb.p.rapidapi.com/exercises/bodyPartList',
         exerciseOptions
@@ -34,19 +24,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   const handleSearch = async () => {
     if (search) {
-      // const exercisesData = await fetchData(
-      //   'https://zuka.p.rapidapi.com/',
-      //   exerciseOptions
-      // );
-
-      // const searchedExercises = exercisesData.exercices.filter(
-      //   (item) =>
-      //     item.name.toLowerCase().includes(search) ||
-      //     item.target.toLowerCase().includes(search) ||
-      //     item.equipment.toLowerCase().includes(search) ||
-      //     item.bodyPart.toLowerCase().includes(search)
-      // );
-
       const exercisesData = await fetchData(
         'https://exercisedb.p.rapidapi.com/exercises',
         exerciseOptions
@@ -64,6 +41,16 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
       setSearch('');
       setExercises(searchedExercises);
+    } else {
+      // Fetch all exercises
+      const allExercisesData = await fetchData(
+        'https://exercisedb.p.rapidapi.com/exercises',
+        exerciseOptions
+      );
+      window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
+
+      setSearch('');
+      setExercises(allExercisesData);
     }
   };
 

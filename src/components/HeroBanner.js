@@ -49,6 +49,7 @@ const HeroBanner = () => (
             textTransform: 'none',
             color: 'white',
             borderRadius: '4px',
+            scrollBehavior: 'smooth'
           }}
         >
           Explore Exercises
@@ -59,7 +60,8 @@ const HeroBanner = () => (
       <img
         src={HeroBannerImage}
         alt='hero-banner'
-        style={{ width: '100%', height: 'auto' }}
+        className='hero-banner-img'
+        style={{ width: '600px', height: '475px' }}
       />
     </Box>
   </Box>
