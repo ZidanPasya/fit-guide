@@ -18,10 +18,7 @@ const RecommendationVideos = ({ beginner, intermediate, expert }) => {
     );
   }
   return (
-    <Box
-      sx={{ marginTop: { lg: '20px' }, marginBottom: { lg: '20px' } }}
-      p='20px'
-    >
+    <Box>
       {/* beginner */}
       <Typography
         sx={{
@@ -38,14 +35,11 @@ const RecommendationVideos = ({ beginner, intermediate, expert }) => {
         </span>{' '}
       </Typography>
       <Stack
-        sx={{
-          flexDirection: { lg: 'row' },
-          gap: { lg: '40px', xs: '0px' },
-        }}
-        justifyContent='flex-start'
+        direction='row'
+        sx={{ gap: { lg: '10px', xs: '50px' } }}
         flexWrap='wrap'
-        alignItems='center'
-        marginBottom='80px'
+        justifyContent='center'
+        marginBottom='40px'
       >
         {beginner?.slice(0, 8)?.map((item, index) => (
           <a
@@ -82,7 +76,7 @@ const RecommendationVideos = ({ beginner, intermediate, expert }) => {
         }}
         fontWeight={700}
         color='#000'
-        mt='120px'
+        mt='33px'
         mb='33px'
       >
         Workout for{' '}
@@ -91,14 +85,11 @@ const RecommendationVideos = ({ beginner, intermediate, expert }) => {
         </span>{' '}
       </Typography>
       <Stack
-        sx={{
-          flexDirection: { lg: 'row' },
-          gap: { lg: '20px', xs: '0px' },
-        }}
-        justifyContent='flex-start'
+        direction='row'
+        sx={{ gap: { lg: '10px', xs: '50px' } }}
         flexWrap='wrap'
-        alignItems='center'
-        marginBottom='80px'
+        justifyContent='center'
+        marginBottom='40px'
       >
         {intermediate?.slice(0, 8)?.map((item, index) => (
           <a
@@ -135,6 +126,7 @@ const RecommendationVideos = ({ beginner, intermediate, expert }) => {
         }}
         fontWeight={700}
         color='#000'
+        mt='33px'
         mb='33px'
       >
         Workout for{' '}
@@ -143,14 +135,11 @@ const RecommendationVideos = ({ beginner, intermediate, expert }) => {
         </span>{' '}
       </Typography>
       <Stack
-        sx={{
-          flexDirection: { lg: 'row' },
-          gap: { lg: '40px', xs: '0px' },
-        }}
-        justifyContent='flex-start'
+        direction='row'
+        sx={{ gap: { lg: '10px', xs: '50px' } }}
         flexWrap='wrap'
-        alignItems='center'
-        marginBottom='80px'
+        justifyContent='center'
+        marginBottom='40px'
       >
         {expert?.slice(0, 8)?.map((item, index) => (
           <a

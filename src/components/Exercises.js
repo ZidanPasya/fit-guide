@@ -49,13 +49,12 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   if (!currentExercises.length) return <Loader />;
 
   return (
-    <Box id='exercises' sx={{ mt: { lg: '109px' } }} mt='50px' p='20px'>
+    <Box id='exercises' p='40px'>
       <Typography
         variant='h4'
         fontWeight='bold'
         sx={{ fontSize: { lg: '44px', xs: '30px' } }}
         mb='46px'
-        ml='80px'
       >
         Best Exercises
       </Typography>
@@ -69,7 +68,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
       </Stack>
-      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems='center'>
+      <Stack sx={{ mt: '40px' }} alignItems='center'>
         {exercises.length > 9 && (
           <Pagination
             color='standard'

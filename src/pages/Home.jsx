@@ -13,7 +13,7 @@ const Home = () => {
   const [chatModalOpen, setChatModalOpen] = useState(false);
 
   return (
-    <Box minHeight='560px' height='auto'>
+    <Box>
       <HeroBanner />
       <SearchExercises
         setExercises={setExercises}

@@ -84,7 +84,7 @@ const Exercises = () => {
     );
 
   return (
-    <Box minHeight='560px' height='auto'>
+    <Box>
       <Stack
         direction='row'
         marginBottom='80px'
@@ -93,7 +93,7 @@ const Exercises = () => {
         flexWrap='wrap'
       >
         <FormControl
-          sx={{ margin: '20px', minWidth: '200px', bgcolor: '#fff' }}
+          sx={{ margin: '20px 20px 20px 0px', minWidth: '200px', bgcolor: '#fff' }}
         >
           <InputLabel htmlFor='bodyPart' sx={{ color: '#111' }}>
             Filter by BodyParts:
@@ -171,7 +171,7 @@ const Exercises = () => {
           </Stack>
         )}
       </Stack>
-      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems='center'>
+      <Stack sx={{ m: '40px' }} alignItems='center'>
         {currentExercises?.length > 0 && (
           <Pagination
             color='standard'

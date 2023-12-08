@@ -13,8 +13,19 @@ body {
   width: 0px;
 }
 
-.right-arrow,
 .left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #273842;
+  font-size: 25px;
+  border-radius: 4px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
   cursor: pointer;
   background: transparent;
   outline: none;
@@ -26,14 +37,8 @@ body {
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
-  bottom: -20px;
-  right: 80px;
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
-}
-
-.right-arrow {
-  right: 140px;
 }
 
 .right-arrow:hover,
@@ -52,21 +57,11 @@ body {
   height: 742px;
 }
 
-.hero-banner-img {
-  position: absolute;
-  right: 10px;
-  top: 160px;
-  width: 900px;
-  height: 700px;
-  margin-top: -330px;
-}
-
 .exercise-card {
-  width: 400px;
-  height: 445px;
   background: #fff;
   border-top: 4px solid #273842;
   border-bottom-left-radius: 20px;
+  height: fit-content;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -90,9 +85,9 @@ body {
   flex-direction: column;
   gap: 24px;
   width: 387px;
-  height: 381px;
+  height: 100%;
   text-decoration: none;
-  margin-bottom: 6px;
+  padding-bottom: 20px;
 }
 
 .exercise-card:hover,

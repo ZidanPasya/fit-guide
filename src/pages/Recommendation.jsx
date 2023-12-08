@@ -34,11 +34,7 @@ const Recommendation = () => {
     fetchExercisesData();
   }, []);
   return (
-    <Box
-      sx={{ mt: { lg: '96px', xs: '60px' }, ml: { md: '100px' } }}
-      minHeight='560px'
-      height='auto'
-    >
+    <Box p='40px'>
       <RecommendationVideos
         beginner={beginnerData}
         intermediate={intermediateData}
