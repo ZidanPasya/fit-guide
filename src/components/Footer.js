@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 
 const Footer = () => (
-  <Box mt='80px' bgcolor='#F4F4F5' width='100%' padding='20px'>
+  <Box bgcolor='#F4F4F5' width='100%' padding='20px'>
     <Typography
       variant='h5'
       sx={{ fontSize: { lg: '28px', xs: '20px' } }}
